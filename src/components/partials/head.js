@@ -8,6 +8,10 @@ export default function SiteHead() {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta name="robots" content="noindex"></meta>
             <meta name="googlebot" content="noindex"></meta>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link href="https://fonts.googleapis.com/css2?family=Balthazar&family=Great+Vibes&display=swap" rel="stylesheet" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
     )
