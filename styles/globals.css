@@ -37,6 +37,12 @@ h6,
     @apply font-title;
 }
 
+h1,
+.h1 {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+}
+
 p,
 ul {
     font-size: 1.6rem;
@@ -67,10 +73,31 @@ ul:last-of-type {
     text-align: center;
     padding: 1.1rem 2.5rem;
     border-radius: 3rem;
-    @apply bg-theme-purple;
+    @apply bg-theme-dusty_blue;
     text-transform: uppercase;
     color: #fff;
     font-size: 2rem;
     line-height: 2.5rem;
     font-weight: bold;
+}
+
+.home__banner {
+    position: relative;
+}
+
+.home__banner:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    border: 0.2rem solid #fff;
+}
+
+.image {
+    border: 0.2rem solid #fff;
+    padding: 0.5rem;
 }

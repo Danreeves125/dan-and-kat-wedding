@@ -4,8 +4,8 @@ module.exports = {
     content: ["./pages/**/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}"],
     theme: {
         fontFamily: {
-            body: ["Roboto", "sans-serif"],
-            title: ["Roboto Condensed", "sans-serif"],
+            body: ["Balthazar", "sans-serif"],
+            title: ["Great Vibes", "sans-serif"],
         },
         container: {
             center: true,
@@ -26,23 +26,8 @@ module.exports = {
             },
             colors: {
                 theme: {
-                    purple: {
-                        DEFAULT: "hsl(245, 55%, 59%)",
-                        alt: "hsl(293, 46%, 51%)",
-                    },
-                    pink: {
-                        DEFAULT: "hsl(323, 71%, 53%)",
-                        alt: "hsl(339, 92%, 56%)",
-                    },
-                    blue: {
-                        DEFAULT: "hsl(211, 100%, 41%)",
-                    },
-                    grey: {
-                        DEFAULT: "hsl(0, 7%, 92%)",
-                        medium: "hsl(0, 0%, 87%)",
-                        dark: "hsl(0, 0%, 44%)",
-                        darkest: "hsl(0, 0%, 20%)",
-                    },
+                    blush: "hsl(348, 73%, 81%)",
+                    dusty_blue: "hsl(210, 19%, 61%)",
                 },
             },
         },
