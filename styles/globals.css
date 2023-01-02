@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 html {
-    font-size: 2.084vw;
-    color: #000;
-    @apply font-body;
+	font-size: 2.084vw;
+	color: #000;
+	@apply font-body;
 }
 
 @media (min-width: 480px) {
-    html {
-        font-size: 10px;
-    }
+	html {
+		font-size: 10px;
+	}
 }
 
 body {
-    height: 100vh;
+	height: 100vh;
 }
 
 .container {
-    max-width: 100rem;
+	max-width: 100rem;
 }
 
 h1,
@@ -34,78 +34,78 @@ h5,
 .h5,
 h6,
 .h6 {
-    @apply font-title;
+	@apply font-title;
+	font-weight: normal;
 }
 
 h1,
 .h1 {
-    font-size: 4.5rem;
-    line-height: 5.5rem;
+	font-size: 4.5rem;
+	line-height: 5.5rem;
 }
 
 @media (min-width: 640px) {
-    h1,
-    .h1 {
-        font-size: 6.5rem;
-        line-height: 8.5rem;
-    }
+	h1,
+	.h1 {
+		font-size: 6.5rem;
+		line-height: 8.5rem;
+	}
 }
 
 p,
 ul {
-    font-size: 1.6rem;
-    line-height: 2.1rem;
-    margin: 1rem 0;
+	font-size: 1.6rem;
+	line-height: 2.1rem;
+	margin: 1rem 0;
 }
 
 p:first-child,
 p:first-of-type,
 ul:first-child,
 ul:first-of-type {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 p:last-child,
 p:last-of-type,
 ul:last-child,
 ul:last-of-type {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .button {
-    display: inline-flex;
-    min-width: 23.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1.1rem 2.5rem;
-    border-radius: 3rem;
-    @apply bg-theme-dusty_blue;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-weight: bold;
+	display: inline-flex;
+	min-width: 13.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 1rem 3rem;
+	border-radius: 0.5rem;
+	color: #fff;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	font-weight: bold;
+	border: 0.1rem solid #fff;
 }
 
 .home__banner {
-    position: relative;
+	position: relative;
 }
 
 .home__banner:before {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    width: calc(100% - 3rem);
-    height: calc(100% - 3rem);
-    border: 0.2rem solid #fff;
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	width: calc(100% - 3rem);
+	height: calc(100% - 3rem);
+	border: 0.2rem solid #fff;
 }
 
 .image {
-    border: 0.2rem solid #fff;
-    padding: 0.5rem;
+	border: 0.2rem solid #fff;
+	padding: 0.5rem;
 }
