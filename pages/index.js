@@ -19,7 +19,7 @@ export default function Home({ data }) {
                 <Image className="absolute top-0 right-0  max-w-[45rem] small:max-w-[60rem] w-full" src={flowerTop} />
 
                 <div className="flex flex-col items-center z-2 relative">
-                    <Image className="rounded-[50%] w-[17.3rem] image mb-[2rem]" src={TheCouple} />
+                    <Image className="rounded-[50%] w-[20rem] image mb-[2rem]" src={TheCouple} />
                     <h1 className="text-white text-center">
                         Kat & Dan's <br />
                         Wedding

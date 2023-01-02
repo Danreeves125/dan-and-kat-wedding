@@ -43,6 +43,14 @@ h1,
     line-height: 5.5rem;
 }
 
+@media (min-width: 640px) {
+    h1,
+    .h1 {
+        font-size: 6.5rem;
+        line-height: 8.5rem;
+    }
+}
+
 p,
 ul {
     font-size: 1.6rem;
