@@ -6,6 +6,7 @@ module.exports = {
         fontFamily: {
             body: ["Balthazar", "sans-serif"],
             title: ["Great Vibes", "sans-serif"],
+            label: ["Open Sans", "sans-serif"],
         },
         container: {
             center: true,

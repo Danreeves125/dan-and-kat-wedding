@@ -21,37 +21,62 @@ export default function ContactForm() {
 	}
 
 	return (
-		<form className="mx-auto max-w-[65rem]" onSubmit={handleSubmit(onSubmit)}>
-			<h4 className="h1">Contact Form</h4>
-			<input className="w-full h-[5rem] text-[1.6rem]" {...register("name")}></input>
-			<input className="w-full h-[5rem] text-[1.6rem]" {...register("starter")} defaultValue="leak & potato soup" readOnly></input>
-			<div>
-				<label>
-					<input {...register("main")} type="radio" value="chicken" />
-					Chicken
-				</label>
+		<form className="mx-auto max-w-[72rem] px-[2rem]" onSubmit={handleSubmit(onSubmit)}>
+			<h4 className="h1 text-center">Contact Form</h4>
+			<div className="form__group">
+				<label className="form__label" htmlFor="">Name</label>
+				<input className="w-full h-[5rem] text-[1.6rem]" {...register("name")}></input>
 			</div>
-			<div>
-				<label htmlFor="">
-					<input {...register("main")} type="radio" value="rissotto" />
-					Risotto
+
+			<div className="form__group">
+				<label className="form__label" htmlFor="">Starter</label>
+				<label className="radio" htmlFor="">
+					<input {...register("starter")} type="radio" value="soup" defaultChecked/>
+					<span></span>
+					<span>Leek & Potato Soup - Garnished with deep fried leeks (VG)</span>
 				</label>
 			</div>
 
-			<div>
-				<label>
-					<input {...register("dessert")} type="radio" value="tart" />
-					Tart
-				</label>
-			</div>
-			<div>
-				<label htmlFor="">
-					<input {...register("dessert")} type="radio" value="brownie" />
-					Brownie
-				</label>
+			<div className="form__group">
+				<label htmlFor="" className="form__label">Main Course</label>
+
+				<div className="flex items-start flex-col">
+					<label className="radio" htmlFor="">
+						<input {...register("main")} type="radio" value="chicken" />
+						<span></span>
+						<span>Breast Of Chicken wrapped in pancetta in a cream sauce (GF)</span>
+					</label>
+
+					<label className="radio" htmlFor="">
+						<input {...register("main")} type="radio" value="rissotto" hidden />
+						<span></span>
+						<span>Quinoa Risotto with halloumi, sweet potato & curried cauliflower (V)</span>
+					</label>
+				</div>
 			</div>
 
-			<textarea {...register("dietary_requirements", {})} />
+			<div className="form__group">
+				<label htmlFor="" className="form__label">Dessert</label>
+
+				<div className="flex items-start flex-col">
+					<label className="radio" htmlFor="">
+						<input {...register("dessert")} type="radio" value="tart" />
+						<span></span>
+						<span>Chocolate brownie with vanilla ice-cream (V, GF)</span>
+					</label>
+
+					<label className="radio" htmlFor="">
+						<input {...register("dessert")} type="radio" value="brownie" />
+						<span></span>
+						<span>Salted caramel & chocolate tart with cookie dough ice-cream & toffee sauce (V, GF)</span>
+					</label>
+				</div>
+			</div>
+
+			<div className="form__group">
+				<label className="form__label" htmlFor="">Dietary Requirments</label>
+				<textarea className="w-full h-[15rem]" {...register("dietary_requirements", {})} />
+			</div>
 
 			<button className="button button--black" role="submit">
 				{isSubmitting ? "Submitting" : "Submit"}
