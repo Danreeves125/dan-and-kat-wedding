@@ -89,6 +89,16 @@ ul:last-of-type {
 	border: 0.1rem solid #fff;
 }
 
+.button--black {
+	color: #000;
+	border-color: #000;
+}
+
+input {
+	border: 1px solid #000;
+	padding: 0 1.5rem;
+	border-radius: 0.5rem;
+}
 .home__banner {
 	position: relative;
 }

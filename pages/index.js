@@ -11,6 +11,7 @@ const bannerStyling = {
 	background: `linear-gradient(90deg, rgba(136,155,174,0.9) 0%, rgba(136,155,174,0.9) 100%), url('${bg.src}')`,
 	backgroundSize: "cover",
 };
+import ContactForm from "@/components/ContactForm";
 
 export default function Home({ data }) {
 	return (
@@ -22,7 +23,7 @@ export default function Home({ data }) {
 					<Image className="rounded-[50%] w-[20rem] image mb-[2rem]" src={TheCouple} />
 					<h1 className="text-white text-center">Kat & Dan's Wedding</h1>
 					<span className="text-[2.5rem] text-white mb-[2.8rem]">03/04/2023</span>
-					<Link href="" class="button">
+					<Link href="" className="button">
 						RSVP
 					</Link>
 				</div>
@@ -38,6 +39,7 @@ export default function Home({ data }) {
 						<span className="block text-center text-[3rem] my-[1rem] small:my-[2rem]">&</span>
 						<h2 className="h1">Daniel Reeves</h2>
 					</div>
+					<ContactForm />
 				</div>
 				<Image className="absolute bottom-0 left-[-10rem] scale-y-[-1] max-w-[25rem] medium:left-[-25rem] small:max-w-[30rem] medium:max-w-[60rem] w-full scale-x-[-1]" src={flowerTop} />
 			</section>
