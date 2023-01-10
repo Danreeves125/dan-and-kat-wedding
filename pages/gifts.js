@@ -1,13 +1,19 @@
 import PageLayout from "@/components/PageLayout";
-import Link from "next/link";
 
+import Link from "next/link";
+import bg from "/public/images/banner-bg.jpg";
 import Image from "next/image";
 import TheCouple from "/public/images/me.jpg";
 import flowerTop from "/public/images/flower-top.png";
-
+import flowerBottom from "/public/images/flower-bottom.png";
+const bannerStyling = {
+	background: `linear-gradient(90deg, rgba(136,155,174,0.9) 0%, rgba(136,155,174,0.9) 100%), url('${bg.src}')`,
+	backgroundSize: "cover",
+};
+import ContactForm from "@/components/ContactForm";
 import Links from "@/components/Links";
 
-export default function Location() {
+export default function Acommodation({ data }) {
 	return (
 		<PageLayout>
 			<section className="py-[10rem] relative overflow-hidden">
@@ -16,26 +22,14 @@ export default function Location() {
 				</Link>
 				<Image className="absolute top-0 right-[-10rem]  max-w-[25rem] small:max-w-[30rem] medium:right-[-30rem] medium:max-w-[60rem] w-full" src={flowerTop} />
 				<div className="px-[2rem] relative z-[3] mb-[4rem] small:mb-[8rem]">
-					<h4 className="h1 text-center mb-[3rem]">Location</h4>
+					<h4 className="h1 text-center mb-[3rem]">Gifts</h4>
 
 					<div className="mb-[3rem] max-w-[64rem] text-center px-[2rem] mx-auto">
-						<p className="text-[2rem] leading-[2.5rem]">If you need anything or have any questions about the venu or the day the please don't hesitate to drop me or Kat a message.</p>
+						<p className="text-[2rem] leading-[2.5rem]">As we've lived together for a year or two, we really don't need anything new. But if you're thinking of getting us a wedding gift, some money for out future wouldn't go amiss</p>
 
-						<a className="mt-[3rem] mb-[1rem] block text-[2rem] leading-[2.5rem]" href="tel:07490280888">
-							{" "}
-							<strong>Dan: </strong> 07490280888
-						</a>
-						<a className="block text-[2rem] leading-[2.5rem]" href="tel:07845758389">
-							{" "}
-							<strong>Kat: </strong> 07845758389
-						</a>
-
-						<h2 className="text-[3.5rem] mt-[3rem]">Venu Address</h2>
-						<p className="text-[2rem] leading-[2.5rem]">Pendrell Hall, Codsall Wood, Staffordshire, WV8 1QP</p>
-						<Link className="button button--blush max-w-[20rem] mx-auto mt-[3rem]" target="_blank" href="https://www.google.com/maps/place/Pendrell+Hall+Wedding+Venue+with+Accommodation/@52.6404406,-2.2246831,17z/data=!3m1!4b1!4m5!3m4!1s0x487082e000e5dae5:0x8466a972ece25c1b!8m2!3d52.6404406!4d-2.2224944">
-							Get Directions
-						</Link>
+						<p className="text-[2rem] leading-[2.5rem]">If you really would prefer to get use a gift, here are some ideas below.</p>
 					</div>
+					<div></div>
 				</div>
 				<Links />
 				<Image className="absolute bottom-0 left-[-10rem] scale-y-[-1] max-w-[25rem] medium:left-[-25rem] small:max-w-[30rem] medium:max-w-[60rem] w-full scale-x-[-1] z-[1]" src={flowerTop} />
