@@ -2,20 +2,30 @@ import React, { useState } from "react"
 import axios from "axios"
 import { useForm } from "react-hook-form"
 
+import Swal from "sweetalert2"
+
 export default function ContactForm() {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { isSubmitting },
     } = useForm()
 
     const [successMessage, setSuccessMessage] = useState("")
 
-    function onSubmit(data) {
+    function onSubmit(data, e) {
         axios
             .post("https://eoslthpkyhra9ni.m.pipedream.net", data)
             .then((reponse) => {
-                setSuccessMessage("Thanks for submitting")
+                reset()
+
+                Swal.fire({
+                    title: "Thanks",
+                    text: "Do you want to continue",
+                    icon: "success",
+                    confirmButtonText: "Close",
+                })
             })
             .catch((e) => console.error(e))
     }

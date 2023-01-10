@@ -11,7 +11,7 @@ import Image from "next/image"
 const siteLinks = [
     {
         title: "Accommodation",
-        pageLink: "",
+        pageLink: "/accommodation",
         linkImage: AcommodationImage,
     },
     {
@@ -21,22 +21,22 @@ const siteLinks = [
     },
     {
         title: "Location",
-        pageLink: "",
+        pageLink: "/location",
         linkImage: LocationImage,
     },
     {
         title: "Gifts",
-        pageLink: "",
+        pageLink: "/gifts",
         linkImage: GiftImage,
     },
     {
         title: "The Day",
-        pageLink: "",
+        pageLink: "/the-day",
         linkImage: TheDay,
     },
     {
         title: "Evening Guests",
-        pageLink: "",
+        pageLink: "/evening-guests",
         linkImage: EveningImage,
     },
 ]
