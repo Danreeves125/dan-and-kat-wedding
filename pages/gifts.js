@@ -27,7 +27,12 @@ export default function Acommodation({ data }) {
 					<div className="mb-[3rem] max-w-[64rem] text-center px-[2rem] mx-auto">
 						<p className="text-[2rem] leading-[2.5rem]">As we've lived together for a year or two, we really don't need anything new. But if you're thinking of getting us a wedding gift, some money for out future wouldn't go amiss</p>
 
-						<p className="text-[2rem] leading-[2.5rem]">If you really would prefer to get use a gift, here are some ideas below.</p>
+						<p className="text-[2rem] leading-[2.5rem]">
+							If you really would prefer to get us a gift, here are some ideas below:{" "}
+							<a className="text-theme-blush font-bold" href="https://www.amazon.co.uk/wedding/dan-reeves-kathryn-ormsby-albrighton-april-2023/registry/E1O61F8OYRTX" target="_blank">
+								https://www.amazon.co.uk/wedding/dan-reeves-kathryn-ormsby-albrighton-april-2023/registry/E1O61F8OYRTX
+							</a>
+						</p>
 					</div>
 					<div></div>
 				</div>
