@@ -49,7 +49,7 @@ export default function Links() {
 			<div className="max-w-[75rem] w-full mx-auto px-[2rem] mb-[3rem]">
 				<div className="font-label px-[2rem] text-center bg-theme-dusty_blue text-white rounded-[1rem] p-[3rem]">
 					<h2 className="font-label font-bold text-[2.5rem] mb-[1rem]">Changing Rooms</h2>
-					<p className="">We have two Changing Rooms available from 12 Noon on the wedding day, which guests are very welcome to use.</p>
+					<p className="">Pendrell Hall have two Changing Rooms available from 12 Noon on the wedding day, which guests are very welcome to use.</p>
 
 					<p>Located within The Orchard Stables, they’re a great option if you’d like to get your glad rags on prior to your specified bedroom check-in time.</p>
 
